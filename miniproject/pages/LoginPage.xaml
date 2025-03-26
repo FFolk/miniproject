@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="miniproject.pages.LoginPage"
+             xmlns:viewmodel="clr-namespace:miniproject.Viewmodel"
+             xmlns:model="clr-namespace:miniproject.Model"
+             x:DataType="viewmodel:LoginViewmodel"
+             Title="LoginPage">
+    <Grid>
+        <VerticalStackLayout
+            VerticalOptions="Center">
+            <Border
+                Padding="20,30"
+                StrokeShape="RoundRectangle 10"
+                WidthRequest="350"
+                BackgroundColor="White">
+                <VerticalStackLayout>
+                    <Label
+                        Text="Email"
+                        TextColor="Black"
+                        FontSize="18"
+                        FontAttributes="Bold"></Label>
+                    <Border
+                        Margin="0,5"
+                        StrokeShape="RoundRectangle 5">
+                        <Entry
+                            TextColor="Black"
+                            FontAttributes="Bold"
+                            FontSize="16"
+                            HorizontalTextAlignment="Start"
+                            Text="{Binding Email}"></Entry>
+                    </Border>
+                    <Label
+                        Margin="0,10,0,0"
+                        Text="Password"
+                        TextColor="Black"
+                        FontSize="18"
+                        FontAttributes="Bold"></Label>
+                    <Border
+                        Margin="0,5"
+                        StrokeShape="RoundRectangle 5">
+                        <Entry
+                            TextColor="Black"
+                            IsPassword="True"
+                            HorizontalTextAlignment="Start"
+                            Text="{Binding Password}"></Entry>
+                    </Border>
+                    <Button
+                        Margin="0,15,0,5"
+                        BackgroundColor="blue"
+                        HeightRequest="50"
+                        Text="Login"
+                        TextColor="White"
+                        FontAttributes="Bold"
+                        FontSize="20"
+                        Command="{Binding LoginCommand}"></Button>
+                    <FlexLayout
+                        Direction="Row"
+                        JustifyContent="SpaceBetween"
+                        Margin="0,10,0,0">
+                        <Label Text="Register"
+                               TextColor="Black">
+                            <Label.GestureRecognizers>
+                                <TapGestureRecognizer Command="{Binding }"
+                                                      CommandParameter="{Binding Router}"></TapGestureRecognizer>
+                            </Label.GestureRecognizers>
+                        </Label>
+                        <Label
+                            Text="Forget Password?"
+                            TextColor="Black">
+                        </Label>
+                    </FlexLayout>
+                </VerticalStackLayout>
+            </Border>
+            <VerticalStackLayout HorizontalOptions="Center"
+                                 Margin="0,10">
+                <Label Text="โฟล์คเป็นคนทำ @ ฟ โฟล์ค.คอม"></Label>
+            </VerticalStackLayout>
+        </VerticalStackLayout>
+    </Grid>
+</ContentPage>
