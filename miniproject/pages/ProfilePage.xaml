@@ -63,6 +63,28 @@
                                            FontSize="14"
                                            TextColor="#555555"/>
                                 </HorizontalStackLayout>
+                                <HorizontalStackLayout Spacing="10">
+                                    <Button Text="Home"
+                                            BackgroundColor="#FF0066FF"
+                                            TextColor="White"
+                                            FontSize="14"
+                                            FontAttributes="Bold"
+                                            WidthRequest="120"
+                                            HeightRequest="50"
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:ProfileViewmodel}}, Path=GotoPageCommand}"
+                                            CommandParameter="HomePage"/>
+
+                                    <Button Text="ลงทะเบียน"
+                                            BackgroundColor="#008000"
+                                            TextColor="White"
+                                            FontSize="14"
+                                            FontAttributes="Bold"
+                                            WidthRequest="120"
+                                            HeightRequest="50"
+                                            Command="{Binding Source={RelativeSource AncestorType={x:Type viewmodel:ProfileViewmodel}}, Path=GotoPageCommand}"
+                                            CommandParameter="RegisterPage"/>
+                                </HorizontalStackLayout>
+
                             </VerticalStackLayout>
                         </HorizontalStackLayout>
                     </Border>

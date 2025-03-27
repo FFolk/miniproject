@@ -473,3 +473,4 @@ D:\cs_3\maui\miniproject\miniproject\bin\Debug\net9.0-windows10.0.19041.0\win10-
 D:\cs_3\maui\miniproject\miniproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\students.json
 D:\cs_3\maui\miniproject\miniproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\CommunityToolkit.Mvvm.dll
 D:\cs_3\maui\miniproject\miniproject\bin\Debug\net9.0-windows10.0.19041.0\win10-x64\Newtonsoft.Json.dll
+D:\cs_3\maui\miniproject\miniproject\obj\Debug\net9.0-windows10.0.19041.0\win10-x64\miniproject.sourcelink.json

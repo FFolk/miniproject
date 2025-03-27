@@ -105,4 +105,16 @@ public partial class ProfileViewmodel : ObservableObject
             Student = new ObservableCollection<Students> { CurrentStudent };
         }
     }
+    [RelayCommand]
+    public async Task GotoPage(string page)
+    {
+        if (CurrentStudent != null)
+        {
+            var parameters = new Dictionary<string, object>
+            {
+                { "StudentData", _originalStudentData }
+            };
+            await Shell.Current.GoToAsync(page, parameters);
+        }
+    }
 }
